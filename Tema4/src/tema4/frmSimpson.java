@@ -164,11 +164,11 @@ public class frmSimpson extends javax.swing.JFrame {
             datos.setB(Double.parseDouble(this.txtB.getText().trim()));
             datos.setN(Integer.parseInt(this.txtN.getText().trim()));
             datos.setH((datos.getB()-datos.getA())/datos.getN());
-           // ctrlIntegracion integral = new ctrlIntegracion(datos);
+           ctrlIntegracion integral = new ctrlIntegracion(datos);
 
-          //  double resultado  = integral.Simpson();
+           double resultado  = integral.Simpson();
 
-           // this.lblResultado.setText(String.valueOf(resultado));
+            this.lblResultado.setText(String.valueOf(resultado));
 
         }
         catch(NumberFormatException e){
@@ -184,8 +184,8 @@ public class frmSimpson extends javax.swing.JFrame {
 
     private void RegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegresarActionPerformed
         // TODO add your handling code here
-     //frmPrincipal ventana = new frmPrincipal ();
-     //setVisible(true);
+     frmPrincipal ventana = new frmPrincipal ();
+     setVisible(true);
       dispose();
     }//GEN-LAST:event_RegresarActionPerformed
 
