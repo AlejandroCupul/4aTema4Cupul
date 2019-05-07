@@ -16,11 +16,11 @@ public class Tema4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //frmPrincipal principal = new frmPrincipal();
-        //principal.setSize(400,200);
-        //principal.setLocationRelativeTo(null);
-        //principal.setResizable(false);
-        //principal.setVisible(true);
+        frmPrincipal principal = new frmPrincipal();
+        principal.setSize(400,200);
+        principal.setLocationRelativeTo(null);
+        principal.setResizable(false);
+        principal.setVisible(true);
     }
     
 }
